@@ -57,7 +57,7 @@ public class DBUtil {
 		ResultSet result = null;
 		try {
 			PreparedStatement stmt = getWorkersStatement();
-			stmt.setNString(2, position);
+			stmt.setNString(1, position);
 			result = stmt.executeQuery();
 		} catch (SQLException e) {
 			e.printStackTrace();
